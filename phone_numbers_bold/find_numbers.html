@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<!--Finds all numbers in page-->
+<!-- (\()?(1?[-]?)(\(?\d{3}\)?)([-\s\.]?)(\d{3})?([-\s\.]?)([A-Z]{8})?(\d{4})?(\))? --><head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	 var phoneNumbers = /711|(1-)?\d{3}-(\d{3}-)?([A-Z]{8})?(\d{4})?/g;
+ 	var text= $("body:first").html();
+ text=text.replace(phoneNumbers,"<strong>$&</strong>");
+var sevenElevenReplace= $("body").html().replace(/711/g,'<strong>$&</strong>');
+	$("body").html(text);
+	 $('body').css('color','red');
+})
+</script>
+</head>
+<body>
+Medicare has <i>revised</i> the coverage rules for some healthcare procedures. To be covered, procedures generally must be received through a provider in your plan’s provider 711 network, and some services may require prior authorization from Peoples 711 Health. You can learn more about these coverage changes by calling 1-800-MEDICARE (1-800-633-4227), 24 hours a day, seven days a week. TTY users should call 1-877-486-2048. If you have received any of these treatments on or after the effective dates and would like to seek reimbursement, contact member services.
+</body>
