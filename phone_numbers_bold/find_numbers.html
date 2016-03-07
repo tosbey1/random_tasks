@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-
 <!--Finds all numbers in page-->
 <!-- (\()?(1?[-]?)(\(?\d{3}\)?)([-\s\.]?)(\d{3})?([-\s\.]?)([A-Z]{8})?(\d{4})?(\))? --><head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-	 var phoneNumbers = /711|(1-)?\d{3}-(\d{3}-)?([A-Z]{8})?(\d{4})?/g;
- 	var text= $("body:first").html();
- text=text.replace(phoneNumbers,"<strong>$&</strong>");
-var sevenElevenReplace= $("body").html().replace(/711/g,'<strong>$&</strong>');
+	//regex for phone numbers
+	var phoneNumbers = /711\s|(1-)?(\d{3}-)?(\d{3}-)((\d{4})|([A-Z]{8}))/g;
+	var text= $("body:first").html();
+	text = text.replace(phoneNumbers,"<strong>$&</strong>");
 	$("body").html(text);
-	 $('body').css('color','red');
+	$('body').css('color','red');
 })
 </script>
 </head>
