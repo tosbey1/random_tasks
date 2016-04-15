@@ -5,7 +5,7 @@ $('#content_blocks').find('[href*="Q:"]').click(function(){
       $(this).next().slideToggle('fast');
 
       //Hide the other panels
-      $('[div*="#Q:"]').not($(this).next()).slideUp('fast');
+      $('.block').not($(this).next()).slideUp('fast');
 
     });
 })
