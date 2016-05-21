@@ -125,3 +125,13 @@ img {
     right: 193px;
     position: absolute;
 }
+.page34 {
+    background: url("Brochure Pages/draft634.jpg")!important;
+    background-size: 100%!important;
+    background-repeat: no-repeat;
+}
+.page34-gif1 {
+        width: 68%;
+    margin-right: 177px;
+    margin-top: 92px;
+}
