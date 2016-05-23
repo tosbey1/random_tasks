@@ -26,7 +26,6 @@ body{
 }
 
 #flipbook .hard{
-    background:#ccc !important;
     color:#333;
     -webkit-box-shadow:inset 0 0 5px #666;
     -moz-box-shadow:inset 0 0 5px #666;
@@ -69,8 +68,12 @@ img {
     width: 100%;
     height: auto;
 }
+.page1{
+    background: url('images/gifs-optimized/PPM-Cover_v04_clean.gif') !important;
+    background-size: 100%;
+}
 .page26 {
-    background: url("Brochure Pages/draft626.jpg");
+    background: url("images/pages/draft626.jpg");
     width: 14%;
     height: 28%;
     padding: 81px 452px 315px 128px;
@@ -78,7 +81,7 @@ img {
     background-repeat: no-repeat;
 }
 .page27 {
-    background: url("Brochure Pages/draft636.jpg")!important;
+    background: url("images/pages/draft636.jpg")!important;
     background-size: 100%!important;
     background-repeat: no-repeat;
 }
@@ -93,7 +96,7 @@ img {
     padding-left: 85px;
 }
 .page44 {
-    background: url("Brochure Pages/draft644.jpg")!important;
+    background: url("images/pages/draft644.jpg")!important;
     background-size: 100%!important;
     background-repeat: no-repeat;
 }
@@ -110,7 +113,7 @@ img {
     position: absolute;
 }
 .page46 {
-    background: url("Brochure Pages/draft646.jpg")!important;
+    background: url("images/pages/draft646.jpg")!important;
     background-size: 100%!important;
     background-repeat: no-repeat;
 }
@@ -126,7 +129,7 @@ img {
     position: absolute;
 }
 .page34 {
-    background: url("Brochure Pages/draft634.jpg")!important;
+    background: url("images/pages/draft634.jpg")!important;
     background-size: 100%!important;
     background-repeat: no-repeat;
 }
