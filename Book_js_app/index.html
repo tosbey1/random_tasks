@@ -7,70 +7,89 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<div id="flipbook">
-			<div class="hard page1"><img src="images/Cover-Overlay-1.png"></div>
-			<div class="hard"> <img src="images/pages/draft62.jpg"></div>
-			<div> <img src="images/pages/draft63.jpg"></div>
-			<div> <img src="images/pages/draft64.jpg"></div>
-			<div> <img src="images/pages/draft65.jpg"></div>
-			<div> <img src="images/pages/draft66.jpg"></div>
-			<div> <img src="images/pages/draft67.jpg"></div>
-			<div> <img src="images/pages/draft68.jpg"></div>
-			<div> <img src="images/pages/draft69.jpg"></div>
-			<div> <img src="images/pages/draft610.jpg"></div>
-			<div> <img src="images/pages/draft611.jpg"></div>
-			<div> <img src="images/pages/draft612.jpg"></div>
-			<div> <img src="images/pages/draft613.jpg"></div>
-			<div> <img src="images/pages/draft614.jpg"></div>
-			<div> <img src="images/pages/draft615.jpg"></div>
-			<div> <img src="images/pages/draft616.jpg"></div>
-			<div> <img src="images/pages/draft617.jpg"></div>
-			<div> <img src="images/pages/draft618.jpg"></div>
-			<div> <img src="images/pages/draft619.jpg"></div>
-			<div> <img src="images/pages/draft620.jpg"></div>
-			<div> <img src="images/pages/draft621.jpg"></div>
-			<div> <img src="images/pages/draft622.jpg"></div>
-			<div> <img src="images/pages/draft623.jpg"></div>
-			<div> <img src="images/pages/draft624.jpg"></div>
-			<div> <img src="images/pages/draft625.jpg"></div>
-			<div> <img class="page26" src="images/gifs-optimized/AlbedoA_v01.gif"></div>
-			<div> <img src="images/pages/draft627.jpg"></div>
-			<div> <img src="images/pages/draft628.jpg"></div>
-			<div> <img src="images/pages/draft629.jpg"></div>
-			<div> <img src="images/gifs-optimized/simple_plug_v01-smaller.gif"></div>
-			<div> <img src="images/pages/draft631.jpg"></div>
-			<div> <img src="images/pages/draft632.jpg"></div>
-			<div> <img src="images/pages/draft633.jpg"></div>
-			<div  class="page34"> <img class="page34-gif1"src="images/gifs-optimized/Stem_1_v01-gradient.gif"></div>
-			<div> <img src="images/gifs-optimized/FlyTraps_Field_v01.gif"></div>
-			<div class="page27"> 
-				<img class="page27-gif1"src="images/gifs-optimized/Red_ribbon_v02.gif">
-				<img class="page27-gif2"src="images/gifs-optimized/Red_flowers_v02.gif">
-			</div>
-			<div> <img src="images/pages/draft637.jpg"></div>
-			<div> <img src="images/pages/draft638.jpg"></div>
-			<div> <img src="images/pages/draft639.jpg"></div>
-			<div> <img src="images/pages/draft640.jpg"></div>
-			<div> <img src="images/pages/draft641.jpg"></div>
-			<div> <img src="images/pages/draft642.jpg"></div>
-			<div> <img src="images/pages/draft643.jpg"></div>
-			<div class="page44">
-				<img class="page44-gif1" src="images/gifs-optimized/board_004_000_v01.gif">
-				<img class="page44-gif2" src="images/gifs-optimized/board_006_000_v01.gif">
-				</div>
-			<div> <img src="images/pages/draft645.jpg"></div>
-			<div class="page46"> 
-				<img class="page46-gif1" src="images/gifs-optimized/board_005_000_v01.gif">
-				<img class="page46-gif2" src="images/gifs-optimized/board_006_001_v01.gif">
-				
-			</div>
-			<div> <img src="images/pages/draft647.jpg"></div>
-			<div> <img src="images/pages/draft648.jpg"></div>
-			<div class="hard"> <img src="images/pages/draft649.jpg"></div>
-			<div class="hard"> <img src="images/pages/draft650.jpg"></div>
-		</div>
+  	<!-- Preloader -->
+    <div id="preloader">
+      <div id="status">&nbsp;</div>
+    </div>
+  	<div id="container">
+  		<div id="flipbook">
+  			<div class="hard page1"><img src="images/Cover-Overlay-1.png"></div>
+  			<div class="hard"> <img src="images/pages/draft62.jpg"></div>
+  			<div> <img src="images/pages/draft63.jpg"></div>
+  			<div> <img src="images/pages/draft64.jpg"></div>
+  			<div> <img src="images/pages/draft65.jpg"></div>
+  			<div> <img src="images/pages/draft66.jpg"></div>
+  			<div> <img src="images/pages/draft67.jpg"></div>
+  			<div> <img src="images/pages/draft68.jpg"></div>
+  			<div> <img src="images/pages/draft69.jpg"></div>
+  			<div> <img src="images/pages/draft610.jpg"></div>
+  			<div> <img src="images/pages/draft611.jpg"></div>
+  			<div> <img src="images/pages/draft612.jpg"></div>
+  			<div> <img src="images/pages/draft613.jpg"></div>
+  			<div> <img src="images/pages/draft614.jpg"></div>
+  			<div> <img src="images/pages/draft615.jpg"></div>
+  			<div> <img src="images/pages/draft616.jpg"></div>
+  			<div> <img src="images/pages/draft617.jpg"></div>
+  			<div> <img src="images/pages/draft618.jpg"></div>
+  			<div> <img src="images/pages/draft619.jpg"></div>
+  			<div> <img src="images/pages/draft620.jpg"></div>
+  			<div> <img src="images/pages/draft621.jpg"></div>
+  			<div> <img src="images/pages/draft622.jpg"></div>
+  			<div> <img src="images/pages/draft623.jpg"></div>
+  			<div> <img src="images/pages/draft624.jpg"></div>
+  			<div> <img src="images/pages/draft625.jpg"></div>
+  			<div> <img class="page26" src="images/gifs-optimized/AlbedoA_v01.gif"></div>
+  			<div> <img src="images/pages/draft627.jpg"></div>
+  			<div> <img src="images/pages/draft628.jpg"></div>
+  			<div> <img src="images/pages/draft629.jpg"></div>
+  			<div> <img src="images/gifs-optimized/simple_plug_v01-smaller.gif"></div>
+  			<div> <img src="images/pages/draft631.jpg"></div>
+  			<div> <img src="images/pages/draft632.jpg"></div>
+  			<div> <img src="images/pages/draft633.jpg"></div>
+  			<div  class="page34"> <img class="page34-gif1"src="images/gifs-optimized/Stem_1_v01-gradient.gif"></div>
+  			<div> <img src="images/gifs-optimized/FlyTraps_Field_v01.gif"></div>
+  			<div class="page27"> 
+  				<img class="page27-gif1"src="images/gifs-optimized/Red_ribbon_v02.gif">
+  				<img class="page27-gif2"src="images/gifs-optimized/Red_flowers_v02.gif">
+  			</div>
+  			<div> <img src="images/pages/draft637.jpg"></div>
+  			<div> <img src="images/pages/draft638.jpg"></div>
+  			<div> <img src="images/pages/draft639.jpg"></div>
+  			<div> <img src="images/pages/draft640.jpg"></div>
+  			<div> <img src="images/pages/draft641.jpg"></div>
+  			<div> <img src="images/pages/draft642.jpg"></div>
+  			<div> <img src="images/pages/draft643.jpg"></div>
+  			<div class="page44">
+  				<img class="page44-gif1" src="images/gifs-optimized/board_004_000_v01.gif">
+  				<img class="page44-gif2" src="images/gifs-optimized/board_006_000_v01.gif">
+  				</div>
+  			<div> <img src="images/pages/draft645.jpg"></div>
+  			<div class="page46"> 
+  				<img class="page46-gif1" src="images/gifs-optimized/board_005_000_v01.gif">
+  				<img class="page46-gif2" src="images/gifs-optimized/board_006_001_v01.gif">
+  				
+  			</div>
+  			<div> <img src="images/pages/draft647.jpg"></div>
+  			<div> <img src="images/pages/draft648.jpg"></div>
+  			<div class="hard"> <img src="images/pages/draft649.jpg"></div>
+  			<div class="hard"> <img src="images/pages/draft650.jpg"></div>
+  		</div>
+  	</div>
 	</body>
 	<script>
+  	//Preloader
+    //<![CDATA[
+    $(window).load(function() { // makes sure the whole site is loaded
+        $('#status').fadeOut(); // will first fade out the loading animation
+        $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+        $('body').delay(350).css({'overflow':'visible'});
+    })
+    //]]>
+
+  	
+  	//Flipbook
+  	$( document ).ready(function() {
+  	  //Start Flipbook
 			$("#flipbook").turn({
 				width: 1350,
 				height: 476,
@@ -91,5 +110,29 @@
 						break;
 					}
 				});
+				
+				//Reposition Container
+        function setFlipBookProportions(){
+  				var containter      = $('#container'),
+  				    flipbook        = $('#flipbook'),
+  				    flipbookWidth   = $('#flipbook').width(),
+  				    flipbookHeight  = $('#flipbook').height(),
+  				    containerLeft   = -(flipbookWidth)/2,
+  				    containerTop    = -(flipbookHeight/2)-40;
+			    containter.css({
+            "position": "absolute",
+            "width": flipbookWidth,
+            "height": flipbookHeight,
+            "margin-left": '50%',
+            "margin-top": '50vh',
+            "left": containerLeft,
+            "top": containerTop,
+			    })
+        }
+        setFlipBookProportions();	
+				$(window).on('resize', function(){
+  				setFlipBookProportions();
+        });
+		});
 	</script>
 </html>
