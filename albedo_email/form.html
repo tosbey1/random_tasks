@@ -1,13 +1,26 @@
-<form action="http://newsletter.decubing.com/t/r/s/htect/" method="post" id="subForm">
-    <p>
-        <label for="fieldName">Name</label><br />
-        <input id="fieldName" name="cm-name" type="text" />
-    </p>
-    <p>
-        <label for="fieldEmail">Email</label><br />
-        <input id="fieldEmail" name="cm-htect-htect" type="email" required />
-    </p>
-    <p>
-        <button type="submit">Subscribe</button>
-    </p>
-</form>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="buttons.css" />
+    <link rel="stylesheet" type="text/css" href="set2.css" />
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<div class="albedo-form">
+    <img src="images/title.gif"/>
+    <form  action="http://newsletter.decubing.com/t/r/s/htect/" method="post" id="subForm">
+            <span class="input input--manami">
+                <input class="input__field input__field--manami" type="text" id="input-32" name="cm-name"/>
+                <label class="input__label input__label--manami" for="input-32">
+                    <span class="input__label-content input__label-content--manami">your name</span>
+                </label>
+            </span>
+            <span class="input input--manami">
+                <input class="input__field input__field--manami" type="email" id="i" name="cm-htect-htect" required/>
+                <label class="input__label input__label--manami" for="input-32 fieldEmail">
+                    <span class="input__label-content input__label-content--manami">your email address</span>
+                </label>
+            </span>
+        <p>
+            <button class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s" type="submit">Subscribe</button>
+        </p>
+    </form>
+</div>

@@ -1,0 +1,28 @@
+.albedo-form {
+  background-image: url("images/bg.jpg");
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  width: 500px;
+  font-family: 'Open Sans', sans-serif;
+  height: 28em;
+  padding-top: 11em; }
+  .albedo-form img {
+    width: 17em; }
+  .albedo-form textarea:focus, .albedo-form input:focus {
+    outline: none;
+    color: rgba(128, 128, 128, 0.7); }
+  .albedo-form form {
+    margin: 0 auto;
+    width: 285px; }
+    .albedo-form form input {
+      font-size: 1.2em; }
+  .albedo-form .button--nuka {
+    float: none;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    min-width: 176px;
+    padding: .5em 5em; }
+
+/*# sourceMappingURL=style.css.map */
