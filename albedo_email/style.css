@@ -25,7 +25,7 @@ body{
 }
 .albedo-form form {
   margin: 2em auto;
-  width: 306px; 
+  max-width: 306px; 
 }
 .albedo-form form input {
   font-size: 1.2em; 
