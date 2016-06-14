@@ -4,11 +4,12 @@
     <link rel="stylesheet" type="text/css" href="set2.css" />
     <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
-<div class="albedo-form">
-    <img src="images/title.png"/>
-    <form  action="http://newsletter.decubing.com/t/r/s/htect/" method="post" id="subForm">
+<body>
+    <div class="albedo-form">
+        <img src="images/title.png"/>
+        <form  action="http://newsletter.decubing.com/t/r/s/htect/" method="post" id="subForm">
             <span class="input input--manami">
-                <input class="input__field input__field--manami" type="text" id="input-32" name="cm-name"/>
+                <input class="input__field input__field--manami" type="text" name="cm-name" />
                 <label class="input__label input__label--manami" for="input-32">
                     <span class="input__label-content input__label-content--manami">your name</span>
                 </label>
@@ -19,8 +20,46 @@
                     <span class="input__label-content input__label-content--manami">your email address</span>
                 </label>
             </span>
-        <p>
-            <button class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s" type="submit">Subscribe</button>
-        </p>
-    </form>
-</div>
+            <p>
+                <button class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s" type="submit">Subscribe</button>
+            </p>
+        </form>
+    </div>
+    <script src="classie.js"></script>
+    <script>
+        (function() {
+        // trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+        if (!String.prototype.trim) {
+        (function() {
+        // Make sure we trim BOM and NBSP
+        var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+        String.prototype.trim = function() {
+        return this.replace(rtrim, '');
+        };
+        })();
+        }
+        [].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+        // in case the input is already filled..
+        if( inputEl.value.trim() !== '' ) {
+        classie.add( inputEl.parentNode, 'input--filled' );
+        }
+        // events:
+        inputEl.addEventListener( 'focus', onInputFocus );
+        inputEl.addEventListener( 'blur', onInputBlur );
+        } );
+        function onInputFocus( ev ) {
+        classie.add( ev.target.parentNode, 'input--filled' );
+        }
+        function onInputBlur( ev ) {
+        if( ev.target.value.trim() === '' ) {
+        classie.remove( ev.target.parentNode, 'input--filled' );
+        }
+        }
+        })();
+    </script>
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+    <script>
+        $('#form1').validate();
+        </script>
+</body>
