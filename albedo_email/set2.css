@@ -4,7 +4,6 @@
 	display: inline-block;
 	margin: 0;
 	max-width: 350px;
-	width: calc(100% - 2em);
 	vertical-align: top;
 }
 
@@ -75,7 +74,7 @@
 	width: 100%;
 	background: transparent;
 	padding: 0.5em;
-	margin-bottom: .5em;
+	margin-bottom: 20px;
 	color: #f9f7f6;
 	z-index: 100;
 	opacity: 0;
@@ -153,7 +152,7 @@
 
 .input__field--manami:focus + .input__label--manami .input__label-content--manami,
 .input--filled .input__label--manami .input__label-content--manami {
-	color: #cbc4c6;
+	color: white;
 	-webkit-transform: translate3d(0, 2.1em, 0) scale3d(0.65, 0.65, 1);
 	transform: translate3d(0, 2.1em, 0) scale3d(0.65, 0.65, 1);
 }

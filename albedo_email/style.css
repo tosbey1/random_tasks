@@ -22,7 +22,6 @@ body{
 }
 .albedo-form textarea:focus, .albedo-form input:focus {
   outline: none;
-  color: rgba(128, 128, 128, 0.7); 
 }
 .albedo-form form {
   margin: 2em auto;
