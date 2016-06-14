@@ -3,7 +3,7 @@
 	z-index: 1;
 	display: inline-block;
 	margin: 0;
-	max-width: 350px;
+	max-width: 253px;
 	vertical-align: top;
 }
 
@@ -116,7 +116,7 @@
 }
 
 .input__label-content--manami {
-	padding: 0;
+	padding: 1px;
 	-webkit-transform-origin: 0 0;
 	transform-origin: 0 0;
 	-webkit-transition: -webkit-transform 0.2s, color 0.2s;
