@@ -18,14 +18,13 @@ body{
   box-shadow: 0px 0px 305px 320px rgba(0,0,0,.55);
 }
 .albedo-form img {
-  width: 17em;
+  width: 292px;
 }
 .albedo-form textarea:focus, .albedo-form input:focus {
   outline: none;
 }
 .albedo-form form {
   margin: 2em auto;
-  max-width: 306px; 
 }
 .albedo-form form input {
   font-size: 1.2em; 

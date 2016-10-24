@@ -3,8 +3,8 @@
 	z-index: 1;
 	display: inline-block;
 	margin: 0;
-	max-width: 253px;
 	vertical-align: top;
+	width: 253px;
 }
 
 .input__field {
